@@ -1,0 +1,6 @@
+<form method='post' id = "valid-cart" method="post"  action="{% url 'add_cart' user.id %}" >
+    {% csrf_token %}
+    
+    <input id="send_cart" name="send_cart" type="hidden" value="">
+    <input type='submit' class="btn add-to-cart" value='Valid cart'/>
+</form>
